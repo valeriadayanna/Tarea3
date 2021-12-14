@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         buscarVolley();
     }
     public void buscarVolley() {
-        JsonArrayRequest request=new JsonArrayRequest(Request.Method.POST, baseUrl, null, new Response.Listener<JSONArray>() {
+        JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, baseUrl, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 txt.append("info: " + response.toString());
